@@ -1,0 +1,183 @@
+
+*{
+    margin: 0;
+    padding: 0;
+   
+}
+
+body{
+    background-image:url(/eduford_img/Залив.jpg);
+    background-size: cover;
+   
+   
+    
+
+}
+nav{
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  height: 50px;
+  background-image: linear-gradient(rgba(111, 152, 234, 0.9), rgba(72, 108, 190, 0.474))
+
+    
+}
+
+
+
+.nav-links{
+    flex: 1;
+    text-align: right;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+
+nav div ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+nav div ul li::after{
+    content: '';
+    width: 0%;
+    height: 1px;
+    background:radial-gradient(rgb(255, 255, 255),rgb(45, 113, 251));
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+   
+
+}
+
+nav div ul li:hover::after{
+width: 100%;
+
+
+}
+
+
+
+.main_position{
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    margin: 50px 70px 0 0;
+    
+    
+}
+
+.foto{
+    background-color: rgba(255, 255, 255, 0);
+    transition: 0.5s;
+    position: relative;
+  
+    background-size: cover;
+    background-position: top;
+    
+}
+
+.fotoFour, .fotoFive, .fotoSix, .fotoSeven{
+    opacity: 0;
+    transition: 0.8s;
+}
+
+.foto div{
+ position: absolute;
+ top: 50%;
+ left: 50%;
+ transform: translate(-50%, -50%);
+}
+
+.foto  img{
+    box-shadow: 30px 30px 10px 1px rgba(14, 15, 15, 0.196) ;
+    width: 700px;
+    border-radius: 15px;
+    
+}
+
+.stages{
+ 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.stages .clases a{
+    text-decoration: none;
+    color:black;
+}
+
+
+
+
+
+.clases{
+    display: grid;
+    grid-template-columns: 10fr 1fr;
+    width: 350px;
+    border: none;
+    border-radius: 15px;
+    background-color: #beddf090;
+    margin: 5px 5px ;
+    padding: 5px 10px 5px 10px;
+    box-shadow: 5px 5px 8px rgba(199, 211, 242, 0.601);
+    
+}
+
+   
+
+
+
+
+
+
+.classeL ul li:not(:first-child,:last-child){
+    margin: 5px 0 5px 0;
+}
+
+
+.classeL ul li{
+
+    background-color: rgba(137, 43, 226, 0.474);
+    height: 25px;
+    padding-left: 5px;
+    cursor: pointer;
+   
+    list-style-type: none;
+    border: none;
+    border-radius: 5px 0 0 5px;
+    
+    
+}
+.classeL ul li:hover{
+
+    background-color: rgba(137, 43, 226, 0.633);
+    transform: translateX(-5px);
+    
+    
+}
+
+
+
+.classeR{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: rgba(43, 153, 226, 0.701);
+    border: none;
+    border-radius: 0 5px 5px 0;
+    text-align: center;
+    
+}
+

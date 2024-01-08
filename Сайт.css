@@ -1,0 +1,473 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', 'cursive';
+}
+
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(111, 152, 234, 0.9), rgba(98, 96, 104, 0.3)), url(eduford_img/photo_2023-08-09_14-09-21.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+nav{
+    display: flex;
+    padding: 2% 6%;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+
+
+.nav-links{
+    flex: 1;
+    text-align: right;
+   
+}
+
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+
+nav div ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+nav div ul li::after{
+    content: '';
+    width: 0%;
+    height: 1px;
+    background:radial-gradient(rgb(255, 255, 255),rgb(45, 113, 251));
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+   
+
+}
+
+nav div ul li:hover::after{
+width: 100%;
+
+
+}
+
+
+
+
+.text-box{
+    width: 90%;
+   
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    
+    
+}
+
+.text-box h1{
+    font-size: 62px;
+   
+}
+
+.text-box p{
+    font-size:14px;
+    margin: 10px 0px 40px ;
+}
+
+.hero-btn{
+    display: inline-block;
+    position: relative;
+    background: transparent;
+    border: solid 1px;
+    color: white;
+    padding: 10px 25px;
+    font-size: 13px;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 15px;
+
+    transition: 0.5s;
+
+}
+
+.hero-btn:hover{
+   
+    border: solid 1px rgb(72, 231, 146);
+   
+    background: rgb(72, 231, 146);
+
+}
+
+nav .bi {
+    display: none;
+
+}
+
+@media(max-width:700px){
+    .text-box h1{
+        font-size: 28px;
+    }
+    .nav-links ul li{
+        display: block;
+    }
+
+    .nav-links{
+        background: linear-gradient(rgb(45, 113, 251), rgb(255, 255, 255));
+        position: absolute;
+        height: 100vh;
+        width: 200px;
+        top:0px;
+        right: -200px;
+        text-align: left;
+        transition: 0.8s;
+        
+        z-index: 2;
+
+    }
+
+    nav .bi{
+        display: block;
+    
+    
+        color: rgb(255, 255, 255);
+        font-size: 30px ;
+        margin: 10px;
+        cursor: pointer;
+        transition: 0.6s;
+
+
+
+    }
+
+    nav .bi-x-lg:hover{
+        transform:rotate(90deg) ;
+    }
+
+    nav .bi-list:hover{
+        transform: scale(1.25);
+    }
+
+
+}
+
+/*--------------------course--------------------*/
+
+.Course{
+
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px ;
+   
+}
+.Course h1{
+    font-size: 36px;
+    font-weight: 600;
+}
+.Course>p{
+    color: rgb(110, 110, 110);
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+
+    
+}
+
+
+.row{
+    
+    margin: 5%;
+    display: flex;
+   
+    justify-content: space-between;
+
+}
+
+.course-col {
+    flex-basis: 28%;
+    background:linear-gradient(rgba(45, 113, 251, 0.9), rgba(53, 130, 224, 0.6));
+    border-radius: 15px;
+    margin-bottom: 15%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+
+.course-col *{
+    color: white;
+}
+
+.course-col h3{
+    margin: 10px 0;
+    
+}
+
+.course-col:hover{
+    box-shadow: 0 0 20px 5px rgb(72, 125, 231);
+}
+
+@media(max-width: 700px){
+    .row{
+        flex-direction: column;
+    }
+}
+
+
+/*----------------Campus-----------------*/ 
+
+
+.campus{
+
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+
+}
+
+.campus h1{
+    margin-bottom: 15px;
+}
+
+.campus p{
+     color: rgb(110, 110, 110);
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 22px;
+}
+
+
+
+
+.campus-col{
+
+    flex-basis: 32%;
+    border-radius: 15px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+
+}
+
+
+.campus-col img{
+    width: 100% ;
+    display: block;
+}
+
+.layer{
+    background-color: rgba(153, 194, 227, 0.5);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+
+}
+.layer:hover{
+    background: none;
+}
+
+.layer h3{
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    color: white;
+    font-size: 18px;
+    transition: 0.8s;
+}
+
+.layer:hover h3{
+    bottom: 20%;
+
+}
+
+/*-----------Facilities----------*/
+
+.row a{
+   margin-left: 50px;
+   text-decoration: none;
+   color:black;
+
+}
+
+
+.facilities-col:hover{
+  box-shadow: 0 0 10px 5px rgb(118, 152, 198);
+    
+}
+.facilities{
+    width: 80%;
+    margin: auto;
+    padding-top: 100px;
+    text-align: center;
+   
+   
+
+}
+
+.facilities-col{
+
+    width: 335px;
+    height: 420px;
+    flex-basis: 32%;
+    margin-bottom: 5%;
+    border-radius: 30px;
+    background-color: rgb(248, 248, 248);
+    transition: 0.5s;
+}
+
+.facilities-col img{
+    height: 300px;
+    object-fit: cover;
+    width: 100%;
+    display: block;
+    border-radius: 30px;
+    transition: 0.8s;
+    
+
+}
+
+.facilities p{
+    color: rgb(110, 110, 110);
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+
+    
+}
+
+
+
+
+/*-------------------testimonials--------------*/
+
+.testimonials{
+    
+    width: 80%;
+    padding-top: 100px;
+    text-align: center;
+    margin: auto;
+
+}
+
+.testimonials-col{
+    flex-basis: 44%;
+    margin-bottom: 5%;
+    border-radius: 15px;
+    text-align: left;
+    background-color:rgb(248, 248, 248) ;
+    cursor: pointer;
+    display: flex;
+    padding: 20px;
+    margin-left: 15px;
+}
+
+.testimonials-col img{
+    height: 40px;
+    border-radius:20px ;
+    margin-right: 30px;
+    
+}
+
+.testimonials-col p{
+    padding: 0;
+    color: rgb(110, 110, 110);
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 22px;
+   
+}
+
+.testimonials-col h3{
+    text-align: left;
+    margin-top: 15px;
+}
+
+
+.testimonials-col svg{
+    color: rgb(136, 136, 240);
+    margin-top: 10px;
+}
+
+
+
+
+/*-----------------------Follow------------------*/
+
+.follow{
+
+  
+    width: 70%;
+    margin:400px 0  100px 280px;
+    padding-bottom: 5%;
+    background-image: linear-gradient(rgba(45, 113, 251, 0.9), rgba(53, 130, 224, 0.6)),url(eduford_img/photo_2023-08-07_12-54-05.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 15px;
+    padding: 80px 0;
+
+
+
+}
+
+
+.follow-col {
+    
+    text-align: center;
+    color: white;
+    
+}
+
+
+.follow-col h1{
+    padding: 0 5px 0 5px;
+}
+.follow-col button{
+    margin-top: 35px;
+    border: solid 1px;
+    color: rgb(250, 250, 253);
+    padding: 10px 25px;
+    font-size: 13px;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 15px;
+    background-color: transparent;
+
+    transition: 0.5s;
+
+}
+
+.follow-col button:hover{
+    border: solid 1px rgb(72, 231, 146);
+   
+    background: rgb(72, 231, 146);
+
+}
+
+@media(max-width:700px){
+    .follow-col h1{
+        font-size: 20px;
+    }
+}
+
+
+
+
+
+

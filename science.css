@@ -1,0 +1,85 @@
+*{ 
+    padding: 0;
+    margin: 0;
+   
+}
+body{
+    background: rgb(182, 205, 245),;
+    background-size: contain;
+   
+}
+section{
+    width: 1583px;
+    height: 930px;
+}
+/*---------------------------------------videoDiscription----------------------------------*/
+
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title{
+    position: absolute;
+    margin: 0 0 150px 0;
+    font-size: 50px;
+    color: rgb(110, 115, 117);
+    border-radius: 15px;
+    background-color: rgb(241, 245, 247);
+    opacity: 0.8;
+    
+    
+}
+.sinceTit{
+    position: absolute;
+    font-size: 50px;
+    color: rgb(248, 250, 251);
+    text-align: center;
+
+}
+
+.title h1{
+    text-align: center;
+}
+
+/*----------------------------------------Themes-----------------------------------*/
+
+.themesList{
+    width: 900px;
+    height: 300vh;
+    background-color: white;
+    top: -0px;
+    
+    
+}
+
+.themesList ul{
+    margin-top: 50px;
+
+}
+
+
+.themesList ul li{ 
+    
+    list-style: none;
+    text-align: center;
+}
+
+.themesList ul li:hover{
+    border: none;
+    box-shadow: 0 0 10px 1px rgb(182, 205, 245);
+    border-radius: 15px;
+
+}
+
+.themesList ul li a{
+    text-decoration: none;
+    font-size: 20px;
+    line-height: 70px;
+   
+
+}
+
+
+

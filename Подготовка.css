@@ -1,0 +1,517 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', 'cursive';
+}
+
+body {
+    background: radial-gradient(rgb(137, 173, 223),rgb(83, 129, 213));
+   
+}
+
+/* ----------------------------------навигационная панель------------------------------------------------ */
+nav{
+    background-image: linear-gradient(rgba(111, 152, 234, 0.9), rgba(96, 96, 104, 0.3)), url(eduford_img/photo_2023-08-09_14-09-21.jpg);
+    
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+nav{
+    display: flex;
+    padding: 20px 0 20px 0;  
+}
+
+
+
+.nav-links{
+    flex: 1;
+    text-align: right;
+    margin-right: 50px; 
+}
+
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+
+nav div ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+nav div ul li::after{
+    content: '';
+    width: 0%;
+    height: 1px;
+    background:radial-gradient(rgb(255, 255, 255),rgb(45, 113, 251));
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+   
+
+}
+
+nav div ul li:hover::after{
+width: 100%;
+
+
+}
+
+
+
+
+/* -------------------основной блок для схемы и описания------------------------ */
+.main{
+    
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+/* ---------------------------назввание схемы--------------------------------- */
+.topic{
+    display: flex;
+    justify-content: center;
+    padding: 30px 0 30px 0;
+    
+    font-size: 25px
+}
+
+
+/* ------------------------------это начал подгонять под разные устройства, пока в процессе */
+@media(max-width:950px){
+    .main{
+     display: block;
+  
+    }
+
+    .scheme{
+        scale: 85%;
+        margin-left: -95px;
+       
+    }
+ }
+
+ @media(max-width:800px){
+  
+    .scheme{
+        scale: 150%;
+        margin-left: -200px;
+       
+       
+    }
+}
+
+@media(max-width:1300px){
+  
+    .main{
+        display: block;
+     
+       }
+}
+/* ------------------------------------основа для схемы------------------------------------------------ */
+.scheme{
+    padding-top: 10px;
+    padding-right: 10px;
+    box-shadow: 0 0 30px 0.5px rgb(211, 227, 238);
+    width: 900px;
+    height: 530px;
+    background: linear-gradient(rgba(89, 188, 224, 0.5),rgba(85, 150, 215, 0.6));
+    border-radius: 15px;
+    position: relative;
+    
+    
+}
+
+
+/* ---------------------------это уже разбивка по титулам-------------------------------------------- */
+.top{
+    margin: 10px 10px 10px 10px;  
+    display: flex;
+    height: 200px; 
+    position: relative;
+    border-radius: 15px;
+    justify-content: space-around;
+    text-align: center;
+    
+    
+
+}
+
+
+
+.topArea{
+    margin-left: 10px;
+    border: 1px solid;
+    width: 170px;
+    height: 100%;
+    border-radius: 15px;
+    display: flex;
+   
+    
+    background-color: rgb(119, 227, 119);
+   
+}
+
+#round{
+    position: relative;
+    margin: 40px 0 0 10px;
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+    border: solid;
+    line-height: 60px;
+ 
+    
+}
+
+
+.rectangle71{
+    width: 25px;
+    height: 65px;
+    border: dotted;
+    margin-top: 115px;
+    margin-left: 30px;
+    
+}
+.rectangle72{
+    width: 25px;
+    height: 70px;
+    border: solid;
+    margin-top: 110px;
+   
+
+}
+
+.rectangle44{
+
+    width: 25px;
+    height: 80px;
+    border: solid;
+    margin: 100px 20px ;
+    
+
+}
+
+.rectangle46{
+    width: 50px;
+    height: 140px;
+    border: dotted;
+    margin: 40px 10px 0 10px ;
+    line-height: 30px;
+
+
+}
+
+.rectangle45{
+    position: relative;
+    width: 25px;
+    height: 50px;
+    border: solid;
+    margin-left: 24px;
+    
+
+}
+.rectangle42{
+    position: relative;
+    width: 25px;
+    height: 50px;
+    border: solid;
+    margin-left: 24px;
+    
+
+}
+
+
+.rectangle1{
+    height: 140px;
+    width: 50px;
+    border: solid;
+    margin: 40px 10px 0 10px ;
+    line-height: 140px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+
+}
+
+.one{
+    height: 30px;
+    width: 50px;
+    
+   
+ 
+   
+}
+
+.two{
+    height: 60px;
+    width: 50px;
+   
+    line-height: 60px;
+    
+  
+}
+
+.three{
+    height: 30px;
+    width: 50px;
+   
+   
+
+
+}
+
+
+
+.rec{
+    margin-left: 25px;
+    line-height: 60px;
+
+}
+
+.rectangle22{
+    border: solid;
+    width: 50px;
+    height: 60px;
+    margin-top: 40px;
+    
+}
+.rectangle21{
+    width: 50px;
+    height: 60px;
+    border: solid;
+    margin-top: 15px;
+}
+
+
+
+.rectangle11{
+    width: 30px;
+    height: 15px;
+    border: solid;
+    margin: 20px 60px;
+}
+
+.rectangle12{
+    width: 60px;
+    height: 40px;
+    border: solid;
+    margin: 60px -100px;
+    position: relative;
+    line-height: 35px;
+
+}
+
+.rectangle10{
+    width: 30px;
+    height: 40px;
+    border: solid;
+    border-top: none;
+    margin: 103px 73px;
+    position: relative;
+    line-height: 30px;
+}
+
+
+
+
+.midle{
+
+    display: flex;
+    margin-top: 10px;
+    width: 100%;
+    height: 140px ;
+  
+    position: relative;
+    border-radius: 15px;
+    justify-content: center;
+
+}
+
+.midleArea{
+    width: 255px;
+    background-color: rgb(119, 227, 119);
+    margin-left: 15px;
+    border-radius: 15px;
+    border: 1px solid;
+    display: flex;
+    text-align: center;
+    line-height: 30px;
+    
+
+
+}
+
+.rectangle91{
+    width: 40px;
+    height: 50px;
+    border: solid;
+    margin: 40px 20px;
+    line-height: 50px;
+
+
+
+}
+
+.rectangle82{
+    width: 40px;
+    height: 30px;
+    border: solid;
+    margin: 40px 0px 0 40px ;
+   
+    line-height: 30px;
+}
+
+.rectangle81{
+    width: 50px;
+    height: 50px;
+    border: solid;
+    margin: 40px 20px;
+    line-height: 50px;
+
+}
+
+
+
+.rectangle73{
+    width: 100px;
+    height: 50px;
+    border: dotted;
+    margin:40px 0 0 20px ;
+    line-height: 50px;
+    text-align: left;
+
+
+
+}
+
+.rectangle74{
+    width: 50px;
+    height: 30px;
+    border: solid;
+    margin:  -31px 0 0 48px;
+    line-height: 30px;
+    text-align: center;
+}
+
+.rectangle03{
+    width: 80px;
+    height: 50px;
+    border: solid;
+    margin: 40px 0 0 20px;
+    line-height: 50px;
+
+}
+
+
+
+.bottom{
+    margin-top: 10px;
+    width: 100%;
+    height: 140px ;
+    
+    position: relative;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    
+}
+
+.bottomleft{
+     width: 275px;
+    background-color: rgb(119, 227, 119);
+    margin-left: 15px;
+    border-radius: 15px;
+    margin-left: 20px;
+    border: 1px solid;
+
+}
+
+.bottomCircle{
+    width: 50px;
+    background-color: rgb(119, 227, 119);
+    margin-left: 15px;
+    border-radius: 25px;
+    border: 1px solid;
+}
+
+.bottomRight{
+   width: 165px;
+   background-color: rgb(119, 227, 119);
+   margin-left: 15px;
+   border-radius: 15px;
+   border: 1px solid;
+
+}
+
+
+
+.rectangle14{
+
+    width: 220px;
+    height: 35px;
+    border: solid;
+    margin: 40px 0 0 20px;
+    line-height: 35px;
+
+
+
+
+}
+
+.rectangle05{
+    width: 120px;
+    height: 90px;
+    border: solid;
+    margin: 20px 0 0 20px;
+    line-height: 90px;
+
+
+}
+
+
+.departments{
+    margin-top: 80px;
+}
+
+.departments a{
+    color: black;
+    padding: 0 20px;
+    width: 500px;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    line-height: 50px;
+   
+
+    
+}
+
+.departments a:hover{
+    border: none;
+    border-radius: 15px;
+   
+    box-shadow:  0 0 10px 1px rgb(255, 255, 255);
+   
+}
+.departments a:active{
+   
+    background-color: rgb(119, 227, 119);
+    color: black;
+   
+}
+
+
+
+

@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "eduford_img"
+		},
+		{
+			"path": "../typescript"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "сайт"
+	}
+}

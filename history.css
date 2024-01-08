@@ -1,0 +1,51 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    display: flex;
+    justify-content: center;
+}
+
+.main{
+    background-color: #b0cbef;
+    width: 900px;
+    height: 100vh;
+    box-shadow: 0 0 30px 5px #b0cbef;
+    
+}
+.main h1{
+    margin: 50px 0 30px 0 ;
+    text-align: center;
+    font-size: 40px;
+
+}
+
+.list{
+    font-size: 18px;
+}
+
+.list .solution{
+    margin-left: 50px;
+    background: rgb(185, 248, 210);
+    padding: 5px 15px;
+    border-radius: 15px;
+}
+.list p{
+    margin: 0 30px 20px 40px;
+    
+}
+.occurse{
+    transition: 0.5s;
+    font-size: 20px;
+    background: rgb(238, 214, 214);
+    padding: 5px 15px;
+    border-radius: 15px;
+
+}
+
+
+
+
+
+
