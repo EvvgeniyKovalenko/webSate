@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+
+body{
+    background-color: #007aff;
+    color: rgb(238, 231, 231);
+
+    font-size: 20px;
+    
+}
+
+nav{
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    height: 50px;
+    background-image: linear-gradient(rgba(111, 152, 234, 0.9), rgba(72, 108, 190, 0.474))
+  
+      
+  }
+  
+  
+  
+  .nav-links{
+      flex: 1;
+      text-align: right;
+      
+      display: flex;
+      justify-content: center;
+      align-items: center;
+     
+  }
+  
+  .nav-links ul li{
+      list-style: none;
+      display: inline-block;
+      padding: 8px 12px;
+      position: relative;
+  }
+  
+  nav div ul li a{
+      color: white;
+      text-decoration: none;
+      font-size: 15px;
+  }
+  
+  nav div ul li::after{
+      content: '';
+      width: 0%;
+      height: 1px;
+      background:radial-gradient(rgb(255, 255, 255),rgb(45, 113, 251));
+      display: block;
+      margin: auto;
+      transition: 0.5s;
+     
+  
+  }
+  
+  nav div ul li:hover::after{
+  width: 100%;
+  
+  
+  }
+
+  .wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .dep90{
+    width: 1100px;
+    margin-top: 50px;
+
+  }
+
+  .dep90 li{
+    color: rgb(140, 242, 67);
+  }
+  
+  .dep90 *{
+  margin: 30px 0 0 0;
+  line-height: 30px;
+  }
+  .botton{
+    margin-top: 200px
+  }
